@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HeyBnb Suite]" parallel="tests">
+  <test name="Forgot Password(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.ShareYorSpace">
+        <methods>
+          <include name="HomePage"/>
+        </methods>
+      </class> <!-- testcases.ShareYorSpace -->
+      <class name="testcases.HomePage">
+        <methods>
+          <include name="BrowserOpen"/>
+        </methods>
+      </class> <!-- testcases.HomePage -->
+      <class name="testcases.RequestToBook">
+        <methods>
+          <include name="BrowserOpen"/>
+        </methods>
+      </class> <!-- testcases.RequestToBook -->
+      <class name="testcases.ForgotPwd">
+        <methods>
+          <include name="FgtPwd"/>
+        </methods>
+      </class> <!-- testcases.ForgotPwd -->
+    </classes>
+  </test> <!-- Forgot Password(failed) -->
+  <test name="Request To Book(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.ShareYorSpace">
+        <methods>
+          <include name="HomePage"/>
+        </methods>
+      </class> <!-- testcases.ShareYorSpace -->
+      <class name="testcases.HomePage">
+        <methods>
+          <include name="BrowserOpen"/>
+        </methods>
+      </class> <!-- testcases.HomePage -->
+      <class name="testcases.RequestToBook">
+        <methods>
+          <include name="HostLoginToAccept"/>
+          <include name="GuestLoginToPayment"/>
+          <include name="GuestLogout"/>
+          <include name="GuestLoginSendRequest"/>
+          <include name="BrowserOpen"/>
+          <include name="HostLogOut"/>
+        </methods>
+      </class> <!-- testcases.RequestToBook -->
+    </classes>
+  </test> <!-- Request To Book(failed) -->
+  <test name="Share Your Space(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.ShareYorSpace">
+        <methods>
+          <include name="ListingStatus"/>
+          <include name="HostSignIn"/>
+          <include name="HomePage"/>
+          <include name="PropertyListing"/>
+        </methods>
+      </class> <!-- testcases.ShareYorSpace -->
+      <class name="testcases.HomePage">
+        <methods>
+          <include name="BrowserOpen"/>
+        </methods>
+      </class> <!-- testcases.HomePage -->
+      <class name="testcases.RequestToBook">
+        <methods>
+          <include name="BrowserOpen"/>
+        </methods>
+      </class> <!-- testcases.RequestToBook -->
+    </classes>
+  </test> <!-- Share Your Space(failed) -->
+  <test name="Home Page(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.ShareYorSpace">
+        <methods>
+          <include name="HomePage"/>
+        </methods>
+      </class> <!-- testcases.ShareYorSpace -->
+      <class name="testcases.HomePage">
+        <methods>
+          <include name="TopDestinations"/>
+          <include name="Blogs"/>
+          <include name="BrowserOpen"/>
+          <include name="StayAndExplore"/>
+          <include name="MainPage"/>
+          <include name="HostAndEarn"/>
+          <include name="FooterLinks"/>
+        </methods>
+      </class> <!-- testcases.HomePage -->
+      <class name="testcases.RequestToBook">
+        <methods>
+          <include name="BrowserOpen"/>
+        </methods>
+      </class> <!-- testcases.RequestToBook -->
+    </classes>
+  </test> <!-- Home Page(failed) -->
+</suite> <!-- Failed suite [HeyBnb Suite] -->

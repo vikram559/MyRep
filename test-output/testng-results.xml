@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28380" started-at="2017-07-19T07:08:36Z" finished-at="2017-07-19T07:09:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28380" started-at="2017-07-19T07:08:36Z" finished-at="2017-07-19T07:09:04Z">
+      <class name="testcases.SearchWithoutLogin">
+        <test-method status="PASS" signature="DBConnection()[pri:0, instance:testcases.SearchWithoutLogin@6f7fd0e6]" name="DBConnection" is-config="true" duration-ms="2661" started-at="2017-07-19T12:38:36Z" finished-at="2017-07-19T12:38:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DBConnection -->
+        <test-method status="PASS" signature="BrowserOpen()[pri:1, instance:testcases.SearchWithoutLogin@6f7fd0e6]" name="BrowserOpen" duration-ms="17525" started-at="2017-07-19T12:38:38Z" finished-at="2017-07-19T12:38:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserOpen -->
+        <test-method status="FAIL" signature="BasicSearchFromHome()[pri:2, instance:testcases.SearchWithoutLogin@6f7fd0e6]" name="BasicSearchFromHome" duration-ms="2755" started-at="2017-07-19T12:38:56Z" finished-at="2017-07-19T12:38:59Z">
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[After end of result set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: After end of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5212)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5135)
+	at testcases.SearchWithoutLogin.BasicSearchFromHome(SearchWithoutLogin.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BasicSearchFromHome -->
+        <test-method status="PASS" signature="Sort()[pri:3, instance:testcases.SearchWithoutLogin@6f7fd0e6]" name="Sort" duration-ms="3494" started-at="2017-07-19T12:38:59Z" finished-at="2017-07-19T12:39:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sort -->
+        <test-method status="PASS" signature="BrowserClose()[pri:4, instance:testcases.SearchWithoutLogin@6f7fd0e6]" name="BrowserClose" duration-ms="1892" started-at="2017-07-19T12:39:02Z" finished-at="2017-07-19T12:39:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+        <test-method status="PASS" signature="DbClose()[pri:0, instance:testcases.SearchWithoutLogin@6f7fd0e6]" name="DbClose" is-config="true" duration-ms="2" started-at="2017-07-19T12:39:04Z" finished-at="2017-07-19T12:39:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DbClose -->
+      </class> <!-- testcases.SearchWithoutLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

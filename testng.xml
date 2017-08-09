@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HeyBnb Suite" parallel="tests">
+  <test name="Home Page" allow-return-values="true">
+    <classes>
+      <class name="testcases.HomePage"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Request To Book" allow-return-values="true">
+    <classes>
+	    <class name="testcases.RequestToBook"/>
+    </classes>		
+  </test> <!-- Test -->
+  <test name="Forgot Password" allow-return-values="true">
+    <classes>
+	    <class name="testcases.ForgotPwd"/>
+    </classes>		
+  </test>	
+  <test name="Share Your Space" allow-return-values="true">
+    <classes>
+	    <class name="testcases.ShareYorSpace"/>
+    </classes>		
+  </test>
+ </suite> <!-- Suite -->
